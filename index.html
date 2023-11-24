@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="script.js"></script>
+  <title>movie wiki</title>
+</head>
+<body>
+  <div id="mainDiv">
+    <h1><a href="index.html" >moviewiki</a></h1>
+    <div class="inputAndSearch">
+       <input id="searchBar"
+        placeholder="typing and enter"
+        onfocus="this.placeholder = ''"
+        onblur="this.placeholder = 'typing and enter'"
+        onkeydown="triggerSearch(event)"
+
+       >
+
+       
+    </div>
+    <button class="btns" id="showFavs" onClick="renderFavorites()" >show favorites</button>
+    <div id="result"></div>
+    <button class="btns" id="showMore" onClick="checkAndShowMore()" >show more</button>
+    <button class="btns" id="favBtn" >add  to fav</button>
+    <div class="verticalSpaceThirty"></div>
+    <button class="btns" id="clearBtn" onclick="clearFavorites()" >clear favorites</button>
+    <button class="btns" id="backBtn" onclick="retrieveState()" >back</button>
+  </div>
+</body>
+</html>
